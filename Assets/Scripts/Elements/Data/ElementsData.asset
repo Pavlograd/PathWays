@@ -36,7 +36,7 @@ MonoBehaviour:
     maxSizeMap: 10
   - commentary: Spawn of  a new building
     methodToCall: SpawnBuilding
-    probability: 25
+    probability: 75
     minSizeMap: 10.1
     maxSizeMap: 1000
   - commentary: Spawn of another apartment
