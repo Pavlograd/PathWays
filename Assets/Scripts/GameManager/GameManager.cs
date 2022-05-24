@@ -15,6 +15,7 @@ public class GameManager : MonoBehaviour
     void Awake()
     {
         instance = this;
+        Pause.ResumeGame(); // Resume game if scene switched;
     }
 
     void Start()
