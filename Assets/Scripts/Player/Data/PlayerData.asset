@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 80ce3c78aed748047a8763922a7ed6cf, type: 3}
+  m_Name: PlayerData
+  m_EditorClassIdentifier: 
+  objects:
+  - type: 1
+    name: Path
+    number: 20
+    minSize: 0
+    minRandom: 5
+    maxRandom: 11
+  - type: 6
+    name: Cross
+    number: 1
+    minSize: 0
+    minRandom: -1
+    maxRandom: 3
+  startSize: 10
+  speed: 0.05
+  timBtnNwElmts: 15
+  timBtnNwPssnt: 5
+  timerBuilding: 60

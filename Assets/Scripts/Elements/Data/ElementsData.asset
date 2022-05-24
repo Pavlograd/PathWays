@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2212fe512d174034d9961318d8af3df4, type: 3}
+  m_Name: ElementsData
+  m_EditorClassIdentifier: 
+  grassPaths:
+  - {fileID: 932925206452865712, guid: 6f558f752e5f8a24cbd8f5fd4fc7b4fb, type: 3}
+  - {fileID: 7849730359616389137, guid: 5019bec310660dc4c90930f6a6a38de1, type: 3}
+  - {fileID: 8675854585965958211, guid: b15fa3bace95dec469e3f9ca53d2f1e1, type: 3}
+  - {fileID: 955789625108973475, guid: 1c4dacb043aeab744bb1ef21489a0d4a, type: 3}
+  apartment: {fileID: 1725566905232239501, guid: e1b74813caa278a4aabdb804bd882506, type: 3}
+  building: {fileID: 8485047279904050262, guid: ad9a7013712b48b469618f5179762c30, type: 3}
+  passant: {fileID: 7253830595647841365, guid: e2905506aedf8d94c9f7e2809bf22da6, type: 3}
+  road: {fileID: 8162800359621065727, guid: 7283b0999268990489b39621f294e563, type: 3}
+  parking: {fileID: 3530757001384493868, guid: 35e3cb562e3b8b64590d34b7bcd2e9fc, type: 3}
+  roadCross: {fileID: 3302158248774704337, guid: 5ded1ae0ee7e3de4caedb8aeb432f3f9, type: 3}
+  newElements:
+  - commentary: Always spawn an apartment
+    methodToCall: SpawnApartment
+    probability: 100
+    minSizeMap: 10
+    maxSizeMap: 1000
+  - commentary: First spawn of a building
+    methodToCall: SpawnBuilding
+    probability: 100
+    minSizeMap: 10
+    maxSizeMap: 10
+  - commentary: Spawn of  a new building
+    methodToCall: SpawnBuilding
+    probability: 25
+    minSizeMap: 10.1
+    maxSizeMap: 1000
+  - commentary: Spawn of another apartment
+    methodToCall: SpawnApartment
+    probability: 25
+    minSizeMap: 10.1
+    maxSizeMap: 1000
+  - commentary: Spawn roads
+    methodToCall: SpawnRoads
+    probability: 100
+    minSizeMap: 10.1
+    maxSizeMap: 1000
+  - commentary: Spawn parking
+    methodToCall: SpawnParking
+    probability: 100
+    minSizeMap: 10.1
+    maxSizeMap: 1000
+  mapSize: 100
